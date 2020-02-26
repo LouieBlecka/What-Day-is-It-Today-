@@ -9,12 +9,12 @@ function dayOfWeek(today) {
     "Thursday",
     "Friday",
     "Saturday"];
-    var button = document.html.body.getElementById("dateButton");
+    var button = document.body.getElementById("dateButton");
     var create = document.createElement("p");
-    var find = document.html.body.getElementById("todayIs");
+    var find = document.body.getElementById("todayIs");
     find.appendChild(create);
-    find.p.textContent = day[weekday];
+    find.children.textContent = "day[weekday]";
 }
 button.addEventListener("click", () => {
-    dayOfWeek(document.html.body.getElementById("dateBox").value);
+    dayOfWeek(document.body.getElementById("dateBox").value);
 })
