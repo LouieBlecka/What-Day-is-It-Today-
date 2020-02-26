@@ -12,8 +12,8 @@ function dayOfWeek(today) {
     var button = document.html.body.getElementById("dateButton");
     var create = document.createElement("p");
     var find = document.html.body.getElementById("todayIs");
-    find.create;
-    find.p.textContent = "day[weekday]";
+    find.appendChild(create);
+    find.p.textContent = day[weekday];
 }
 button.addEventListener("click", () => {
     dayOfWeek(document.html.body.getElementById("dateBox").value);
