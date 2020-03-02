@@ -1,4 +1,9 @@
+var button = document.body.getElementById("dateButton");
+button.addEventListener("click", () => {
+    dayOfWeek();
+});
 function dayOfWeek(today) {
+    today = document.body.getElementById("dateBox").value;
     var date = new Date(today);
     var weekday = date.getDay();
     var day = [
@@ -9,12 +14,7 @@ function dayOfWeek(today) {
     "Thursday",
     "Friday",
     "Saturday"];
-    var button = document.body.getElementById("dateButton");
-    var create = document.createElement("p");
+    var answer = day[weekday];
     var find = document.body.getElementById("todayIs");
-    find.appendChild(create);
-    find.children.textContent = "day[weekday]";
+    document.find.appendChild(answer);
 }
-button.addEventListener("click", () => {
-    dayOfWeek(document.body.getElementById("dateBox").value);
-})
