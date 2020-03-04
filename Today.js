@@ -3,8 +3,7 @@ button.addEventListener("click", () => {
     dayOfWeek();
 });
 function dayOfWeek(today) {
-    today = document.body.getElementById("dateBox").value;
-    var date = new Date(today);
+    var date = new Date(document.body.getElementById("dateBox").value);
     var weekday = date.getDay();
     var day = [
     "Sunday",
@@ -15,6 +14,8 @@ function dayOfWeek(today) {
     "Friday",
     "Saturday"];
     var answer = day[weekday];
+    var create = document.createElement("p");
     var find = document.body.getElementById("todayIs");
-    document.find.appendChild(answer);
+    document.body.find.p.appendChild(answer);
+    document.find.appendChild(create);
 }
